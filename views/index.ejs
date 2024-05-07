@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Okos Konyha</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
+  </head>
+  <body>
+    <div class="homepage">
+      <div class="home-container">
+        <h1>Okos Konyha</h1>
+        <% if (status == "loggedIn") { %>
+        <h4 class="home-welcome">Üdv, <%= user.email %></h4>
+        <%} %>
+        <ul class="home-buttons">
+          <% if (status == "loggedIn") { %>
+          <li>
+            <button><a href="/kitchen">Konyha</a></button>
+          </li>
+          <li>
+            <button><a href="/recipes">Receptek</a></button>
+          </li>
+          <li>
+            <button><a href="/logout">Kijelentkezés</a></button>
+          </li>
+          <%} else {%>
+          <li>
+            <button><a href="/login">Bejelentkezés</a></button>
+          </li>
+          <li>
+            <button><a href="/register">Regisztráció</a></button>
+          </li>
+          <%}%>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Okos Konyha</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="homepage">
+      <div class="home-container">
+        <h1 class="cred-title">Regisztráció</h1>
+        <form onsubmit="return false;" id="form">
+          <div class="form-group">
+            <ul>
+              <label for="email">Email cím</label>
+              <li>
+                <input
+                  type="email"
+                  class="form-input"
+                  id="email"
+                  autocomplete="on"
+                  required
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="form-group">
+            <ul>
+              <li>
+                <label for="password">Jelszó</label>
+              </li>
+              <li>
+                <input
+                  type="password"
+                  class="form-input"
+                  id="password"
+                  minlength="8"
+                  required
+                />
+              </li>
+            </ul>
+          </div>
+          <div
+            class="alert alert-danger"
+            role="alert"
+            id="error"
+            style="display: none"
+          ></div>
+          <div
+            class="alert alert-success"
+            role="alert"
+            id="success"
+            style="display: none"
+          ></div>
+          <ul>
+            <li>
+              <button type="submit">Regisztráció</button>
+            </li>
+            <li>
+              <button><a href="/">Vissza</a></button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <script src="js/register.js"></script>
+  </body>
+</html>

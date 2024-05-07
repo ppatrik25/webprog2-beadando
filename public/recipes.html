@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Okos Konyha</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/">Kezdőlap</a>
+      <a href="/kitchen">Konyha</a>
+    </div>
+    <div id="content">
+      <h1>Receptek</h1>
+      <section id="recipes">
+        <div class="recipes-container">
+          <div class="box">
+            <div class="box-row">
+              <div class="box-cell box1">
+                <h1>Új recept hozzáadása</h1>
+              </div>
+              <div class="box-cell box2">
+                <h1>Receptek listája</h1>
+                <div id="radioButtons"></div>
+                <div id="recipesListContainer">
+                  <ul id="recipesList"></ul>
+                </div>
+              </div>
+              <div class="box-cell box3">
+                <h1>Mit főzzünk?</h1>
+                <div class="search-ingredients-field-container">
+                  <label for="search-ingredients-field">
+                    Válassz alapanyagokat!
+                    </label><br />
+                  <select id="search-ingredients-field">
+                    <option></option>
+                  </select>
+                </div>
+                <div id="selected-ingredients-container">
+                  <ul id="selected-ingredients"></ul>
+                </div>
+                <div id="recipe-recommendations-container">
+                  <h4>Ajánlott receptek:</h4>
+                  <div id="recipe-results-container">
+                    <ul id="recipe-results"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/recipes.js"></script>
+  </body>
+</html>

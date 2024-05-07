@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"
+    />
+    <title>Okos Konyha</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/">Kezdőlap</a>
+      <a href="/recipes">Receptek</a>
+    </div>
+    <div id="content">
+      <div id="title">
+        <h1>Okos Konyha</h1>
+      </div>
+      <section id="kitchen">
+        <div id="parent-container">
+          <ul id="left-container">
+            <li>
+              <button class="furniture-button" id="add-furniture-btn">
+                Új tároló
+              </button>
+            </li>
+            <li>
+              <button class="furniture-button" id="delete-furniture-btn">
+                Kiválasztott tároló törlése
+              </button>
+            </li>
+            <li>
+              <button class="furniture-button" id="save-furnitures-btn">
+                Elrendezés mentése
+              </button>
+            </li>
+            <li id="search-row">
+              <label for="search-items-field">Hol van a(z) </label>
+              <select id="search-items-field">
+                <option></option>
+              </select>
+              <label for="search-items-field">?</label>
+
+              <button id="search-items-btn" disabled>Keresés</button>
+            </li>
+            <li>
+              <aside id="info-container"></aside>
+            </li>
+          </ul>
+          <aside id="furnitures-container"></aside>
+        </div>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="js/kitchen.js"></script>
+    </div>
+  </body>
+</html>
